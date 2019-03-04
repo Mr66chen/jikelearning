@@ -6,10 +6,40 @@
     <title>js</title>
 </head>
 <body>
-    <form action="#">
+    <!-- i=<input type="text" placeholder="0" id="ic"><br>
+    j=<input type="text" placeholder="0" id="jc"><br>
+    结果：<span id="consult" style="color:red; font-size:26px;">0</span><br>
+    <input type="button" onclick="calculate()" value="计算"> -->
+    
+
+    <script>
+        var i=1;
+        while(i<=100) {
+            document.write(i+"<br/>");
+            i++;
+        }
+        var j=1;
+        do{
+            document.write(j+"<br/>");
+            j++;
+        }while(j<=100);
+    
+    </script>
+    <!-- <script>
+       function calculate(){
+           var i=document.getElementById("ic").value;
+           var j=document.getElementById("jc").value;
+           var sum=parseInt(i)+parseInt(j);
+           document.getElementById("consult").innerText=sum;
+
+       }
+    </script> -->
+    
+
+    <!-- <form action="#">
         <input type="text" id="first">
         <input type="button" value="提交" onclick="myjs()">
-    </form> 
+    </form>  -->
 
 
     <!-- <script type="text/javascript">
@@ -34,7 +64,7 @@
          alert(obj.height);       
     </script> -->
 
-    <script>
+    <!-- <script>
          //实例化一个对象
          var obj=new Object();
          obj.name="极客";
@@ -48,7 +78,7 @@
          alert("大家好，我叫"+obj.name+"，今年"+obj.age+"岁，身高"+obj.height+"m。\n"+"我的座右铭是：\""+obj.motto+"\"");
          alert(("大家好，我叫"+obj.name+"，今年"+obj.age+"岁，身高"+obj.height+"m。\n"+"我的座右铭是：\""+obj.motto+"\"").length);
 
-    </script>
+    </script> -->
 
 </body>
 </html>
