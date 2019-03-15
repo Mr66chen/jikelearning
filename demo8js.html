@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>换肤</title>
+    <style>
+    .skin-yellow{
+        background-color: yellow;
+        font-size: 28px;
+    }
+    .skin-orange{
+        background-color: orange;
+        font-size: 32px;
+    }
+    .skin-write{
+        background-color: white;
+        font-size: 16px;
+    }
+    
+    </style>
+   
+</head>
+<body class="skin-yellow skin-orange skin-write">
+   <!-- <button onclick="start()">开始</button>
+   <button onclick="stop()">终止</button> -->
+   
+   
+   <!-- <script>
+       var str;
+       function start(){
+           //问题出在str为局部变量
+           str = setTimeout(function(){
+               alert("hello!");
+           },5000)
+       }     
+    
+       function stop(){
+           clearTimeout(str);
+       } 
+   </script> -->
+    <!-- <button onclick="changeSkin('skin-yellow')">点击切换黄色皮肤 </button>
+    <button onclick="changeSkin('skin-orange')">点击切换灰色皮肤 </button>
+    <header>导航栏</header>
+    <article>正文</article>
+    <footer>copyright @ jikexueyuan.com</footer>
+
+    <script>
+           function changeSkin(skin){
+               document.body.className=skin;
+           }
+            </script> -->
+    <div id="mydiv">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <div id="mydiv1">
+              <p>0</p>
+            </div>
+    <script>
+        // var p=document.createElement("p");
+        // var txt=document.createTextNode("你好，世界！");
+        // p.appendChild(txt);
+        // var mydiv=document.getElementById('mydiv');
+        // mydiv.appendChild(p);
+       
+        // var  mydiv2=document.getElementById("mydiv1");
+        // var  mydiv3=mydiv2.cloneNode(true);
+        // mydiv.appendChild(mydiv3);
+        
+        
+            </script>
+    
+</body>
+</html>
