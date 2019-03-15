@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   请输入数字：<input type="text" id="num">
+   点击：<input type="button" value="按钮" onclick="calculate()"> 
+
+   <script>
+       function calculate() {
+      var num=parseInt(document.getElementById('num').value);
+      var sum=0;
+      do{
+       
+        sum=sum+2;
+        
+        var summary=(sum+0)*(sum/2+1)/2;
+      }while(sum<=num);
+
+      alert("偶数之和为:"+summary);
+       }
+   </script>
+</body>
+</html>

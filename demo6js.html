@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简易计算器的实现</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <select name="toogle" id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" name="#" id="num2">
+    <br>
+     <input type="button" value="计算" onclick="calc()">
+     <p id="p1"></p>
+
+     <script>
+                 
+         
+         function calc(){
+            var num1=parseInt(document.getElementById('num1').value);
+            var num2=parseInt(document.getElementById('num2').value);
+            var fuhao=document.getElementById('ope').value;
+            var sum= jisuan(num1,num2,fuhao);
+            document.getElementById('p1').innerText=sum;
+         }  
+          function jisuan(num1,num2,fuhao){
+            switch (fuhao) {
+                 case '+': 
+                       return num1+num2;
+                 case '-': 
+                       return num1-num2;
+                 case '*': 
+                       return num1*num2;  
+                 case '/': 
+                       return num1/num2;
+                  default:
+                       return "未知操作符";
+             }            
+          }
+         
+              
+     </script>
+</body>
+</html>
